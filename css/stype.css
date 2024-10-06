@@ -18,12 +18,12 @@ body {
   display: flex;
 }
 
-.Main-container {
+.Main-container{
   margin-top: -100px;
   background-color: black;
 }
 
-.Main-container .text-center {
+.Main-container.text-center {
   z-index: 0;
   position: absolute;
   align-items: center;
@@ -336,7 +336,7 @@ input:not(:placeholder-shown)~.reset {
   bottom: 0;
   left: 1;
   right: 1;
-  background-color:rgb(93 24 220);
+  background-color:white;
   overflow: hidden;
   width: 500px;
   height: 300px;
