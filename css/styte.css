@@ -19,6 +19,10 @@ header {
 .dropdown-menu {
   z-index: 1;
 }
+.dropdown-item:hover {
+  background:black;
+  color:white;
+}
 nav {
   width: 100%;
   background-color: white;
@@ -54,7 +58,7 @@ aside {
   float: left;
   justify-content: space-between;
   padding: 20px;
-  overflow: auto; /*cuon trang*/
+  overflow: auto; cuon trang
 }
 .table1 {
   margin: auto;
@@ -108,4 +112,8 @@ svg {
 }
 .vehicle-tile img {
   width: 70%;
+}
+#menu li{
+  font-size: 20px;
+  text-indent: 10px;
 }
