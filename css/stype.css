@@ -1,0 +1,372 @@
+* {
+  box-sizing: border-box;
+  padding: 0 auto;
+}
+
+body {
+  font-family: sans-serif;
+  display: grid;
+}
+
+.Header {
+  width: 100%;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  background-color: black;
+  z-index: 2;
+  display: flex;
+}
+
+.Main-container {
+  margin-top: -100px;
+  background-color: black;
+}
+
+.Main-container .text-center {
+  z-index: 0;
+  position: absolute;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  margin-top: 400px;
+  text-shadow: 3px 3px rgba(41, 29, 29);
+  opacity: 0;
+  animation: anim 5s forwards;
+}
+
+#Buy {
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 8px;
+  transition: all 0.5s ease;
+  text-shadow: 2px 2px 2px hsl(261deg 80% 48%);
+}
+
+#Buy:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+#Buy:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+.Topcar {
+  height: auto;
+  width: 100%;
+  background-color: white;
+
+}
+
+#Teme {
+  float: right;
+  padding-top: 50px;
+}
+
+#content {
+  text-align: center;
+}
+
+.New {
+  height: 600px;
+  width: 100%;
+  background-image: -webkit-linear-gradient(rgb(0, 0, 0), rgb(34, 34, 34), rgb(255, 255, 255));
+}
+
+.Option {
+  height: auto;
+  width: 100%;
+  background-color: white;
+  padding-left: 200px;
+}
+
+.Design {
+  height: 900px;
+  width: 100%;
+
+}
+
+.News {
+  height: 900px;
+  width: 100%;
+  background-color: white;
+}
+
+.Footer {
+  height: auto;
+  width: 100%;
+  background-image: -webkit-linear-gradient(rgb(56, 57, 57), rgb(0, 0, 0));
+  color: white;
+  clear: both;
+  font-size: 12px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  border: none;
+}
+
+.btn:hover {
+  background-color: rgb(93 24 220);
+}
+
+.info {
+  text-align: center;
+}
+
+.New li {
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  padding: 0;
+  list-style: none;
+
+}
+
+.New li a {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.New li h3 {
+  margin: 0;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  /* Transparent white */
+}
+
+.New h6 {
+  color: #ECF0F1;
+  text-align: center;
+
+}
+
+.New li p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: azure;
+  /* Transparent white */
+}
+
+.New li .normal {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  /* $clouds */
+  color: rgba(52, 73, 94, 0.6);
+  /* $wet-asphalt with transparency */
+  box-shadow: inset 0 2px 20px rgba(236, 240, 241, 0.8);
+  /* Darken $clouds */
+  text-align: center;
+  font-size: 50px;
+  line-height: 200px;
+}
+
+.New {
+  padding-left: 100px;
+}
+
+.form button {
+  border: none;
+  background: none;
+  color: #8b8ba7;
+}
+
+/* styling of whole input container */
+.form {
+  --timing: 0.3s;
+  --width-of-input: 200px;
+  --height-of-input: 40px;
+  --border-height: 2px;
+  --input-bg: #fff;
+  --border-color: rgb(93 24 220);
+  --border-radius: 10px;
+  --after-border-radius: 1px;
+  position: relative;
+  width: var(--width-of-input);
+  height: var(--height-of-input);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: var(--input-bg, #fff);
+}
+
+/* styling of Input */
+.input {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+}
+
+/* styling of animated border */
+.form:before {
+  content: "";
+  position: absolute;
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease;
+}
+
+
+input:focus {
+  outline: none;
+}
+
+/* here is code of animated border */
+.form:focus-within:before {
+  transform: scale(1);
+}
+
+/* styling of close button */
+/* == you can click the close button to remove text == */
+.reset {
+  border: none;
+  background: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* close button shown when typing */
+input:not(:placeholder-shown)~.reset {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* sizing svg icons */
+.form svg {
+  width: 17px;
+  margin-top: 3px;
+}
+
+@keyframes anim {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.Footer a {
+  color: snow;
+  text-decoration: none;
+  transition: text-decoration-color 300ms;
+  position: relative;
+  padding: 0.2em 0;
+
+}
+
+.Footer a:hover::after,
+.Footer a:hover::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+.Footer a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: rgb(255, 4, 4);
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+.Footer li:nth-child(3) a::after {
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
+}
+
+.Footer li:nth-child(3) a:hover::after,
+.Footer li:nth-child(3) a:focus::after {
+  transform: scale(1);
+}
+
+.imgage {
+  box-shadow: 2px 2px 15px grey;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 1;
+  right: 1;
+  background-color:rgb(93 24 220);
+  overflow: hidden;
+  width: 500px;
+  height: 300px;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  border-radius: 5px;
+}
+
+.img:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.img {
+  position: relative;
+  width: auto;
+}
