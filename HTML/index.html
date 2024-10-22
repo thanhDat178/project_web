@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="/boostrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="/css/stype.css">
-    <script src="/boostrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/js.js"></script>
+
     <style>
 
     </style>
@@ -31,7 +30,7 @@
                             </li>
                             <li>
                                 <a class="navbar-brand link-light link-opacity-25 link-opacity-100-hover "
-                                    style="font-size: 16px;" href="#">Design</a>
+                                    style="font-size: 16px;" href="../HTML/design.html">Design</a>
                             </li>
                             <li><a class="navbar-brand link-light link-opacity-25 link-opacity-100-hover"
                                     style="font-size: 16px;" href="#">News</a>
@@ -61,38 +60,15 @@
                 </div>
                 <div class="col  d-flex flex-row-reverse">
                     <div class="p-2"><a href="Login.html" target="_blank"><button type="button"
-                                class="btn btn-light">Sign in</button></a>
+                        class="btn btn-light">Sign in</button></a>
                     </div>
-                    <div class="p-2">
-                        <form class="form">
-                            <button>
-                                <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
-                                    aria-labelledby="search">
-                                    <path
-                                        d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9"
-                                        stroke="currentColor" stroke-width="1.333" stroke-linecap="round"
-                                        stroke-linejoin="round"></path>
-                                </svg>
-                            </button>
-                            <input class="input" placeholder="Search" required="" type="text">
-                            <button class="reset" type="reset">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12">
-                                    </path>
-                                </svg>
-                            </button>
-                        </form>
-                    </div>
-
-
-
+                    
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="Main-container">
+    <section class="Main ">
         <div class="text-center text-white ">
             <h2>Car Dealership</h2>
             <p>Drive with confidence knowing you made the right choice! <br>
@@ -101,97 +77,110 @@
             <h5>Experience driving like never before...</h5>
         </div>
 
-        <video autoplay loop playsinline id="poster" muted="true" width="100%" height="900px">
+        <video autoplay loop playsinline muted="true" width="100%" height="900px">
             <source src="/IMG/video-car-main.mp4">
         </video>
     </section>
 
-    <section class="New bg1 justify-content-center align-items-center pt-5">
-        <ul>
-            <li>
-                <a href="#" class="normal">
-                    <img src="/IMG/img_news/new_Nissan.webp" width="195px" height="191px" style="border-radius: 5px;">
-                </a>
+    <section class="New justify-content-center align-items-center pt-5 revealUp">
+        <div class="text-center text-light">
+            <h2>New</h2>
+        </div>
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="/IMG/img_news/mclaren_1.png" class="img-fluid" id="img_mclaren">
+                <style>
+                    #img_mclaren {
+                        padding-left: 150px;
+                        width: 90%;
+                    }
+                </style>
+            </div>
 
-                <div class="info ">
-                    <h3 style="color: yellow;"> Nissan Magnite</h3>
-                    <p>Engine Capacity &nbsp;999cc <br>Max Speed:&nbsp;173 Km/h <br>Cylinders:&nbsp;3 </p>
-                </div>
-            </li>
-            <h6><span style="color: rgb(253, 253, 11);">The Nissan Magnite</span> <br> is stunning in every sense of the
-                word. Experience Japanese engineering with the
-                big, bold and beautiful SUV.</h6>
-            <hr style="color: azure;">
-        </ul>
+            <div class="mySlides fade">
+                <img src="/IMG/img_news/imgbin_nissan-png.png" class="img-fluid" width="900px">
+            </div>
 
-        <ul>
-            <li>
-                <a href="#" class="normal">
-                    <img src="/IMG/img_news/new-mazda.png" alt="" width="200px" height="100px"
-                        style="border-radius: 5px;">
-                </a>
+            <div class="mySlides fade">
+                <img src="/IMG/img_news//New_Vinfast.png" class="img-fluid">
+            </div>
 
-                <div class="info">
-                    <h3 style="color: yellow;">Mazda CX-3</h3>
-                    <p>Engine Capacity &nbsp;1,998 cc <br>Max Speed:&nbsp;190 Km/h <br>Cylinders:&nbsp;4 </p>
-                </div>
-            </li>
-            <h6><span style="color: rgb(253, 253, 11);">Mazda CX-3</span> <br> is a new urban SUV aimed at customers who
-                love technology and value safety features.</h6>
-            <hr style="color: azure;">
-        </ul>
-        <ul>
-            <li>
-                <a href="#" class="normal">
-                    <img src="/IMG/img_news/New_Mclaren.png" alt="" width="200px" height="100px"
-                        style="border-radius: 5px;">
-                </a>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
 
-                <div class="info">
-                    <h3 style="color: yellow;">McLaren 750S Spider</h3>
-                    <p>Engine Capacity &nbsp;3,994 cc <br>Max Speed:&nbsp;200 Km/h <br>Cylinders:&nbsp;8</p>
-                </div>
-            </li>
-            <h6><span style="color: rgb(253, 253, 11);">The 750S Spider</span><br> is the next-level convertible
-                supercar. A new benchmark. In performance.
-                Engagement. And purity of response. With the added sensory thrill of the elements</h6>
-            <hr style="color: azure;">
-        </ul>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
 
-        <ul>
-            <li>
-                <a href="#" class="normal">
-                    <img src="/IMG/img_news/New_Vinfast.png" alt="" width="200px" height="150px"
-                        style="border-radius: 5px;">
-                </a>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
 
-                <div class="info">
-                    <h3 style="color: yellow;">VinFast VF7</h3>
-                    <p>Engine Capacity &nbsp;electric motors <br>Max Speed:&nbsp;160-200 km/h <br>Cylinders:&nbsp;60-90
-                        kWh</p>
-                </div>
-            </li>
-            <h6><span style="color: rgb(253, 253, 11);">VF 7</span> <br>is equipped with a series of high-end safety
-                features, along with a strong and luxurious design, giving customers an impressive practical experience.
-            </h6>
-            <hr style="color: azure;">
-        </ul>
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+
+                slides[slideIndex - 1].style.display = "block";
+                slides[slideIndex - 1].classList.add("fade");
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
     </section>
-    <section class="Topcar bg2 justify-content-center align-items-center pt-2">
-        <img src="/IMG/AR Temerario.webp" width="800px" height="400px">
+    <section class="Topcar bg2 justify-content-center align-items-center pt-2 revealUp">
+        <div class="text-center text-light">
+            <h2 style="height: 20vh;">Best Seller</h2>
+        </div>
+        <img src="../IMG/img1.jpg">
+        <style>
+            .Topcar img {
+                border-radius: 20px;
+                box-shadow: -5px -5px 20px white;
+                margin-top: 50px;
+                margin-left: 100px;
+            }
+        </style>
         <div id="Teme">
-            <h2 id="Teme-title">Temerario</h2>
-            <p id="Teme-text">The Temerario is the best-selling car, bringing a fresh interpretation of<br>
+            <h2 style="text-align: center;" class="text-warning">Temerario</h2>
+            <p>The Temerario is the best-selling car, bringing a fresh interpretation of<br>
                 Lamborghini's
                 philosophy of
                 "Feeling like a pilot". The cockpit provides<br> both the driver and passengers with a sense of
                 speed
                 and
                 new<br> experiences in the car, while also offering unprecedented comfort.
-            </p>
 
-            <div id="content">
-                <button id="Buy">Buy Now</button>
+            </p>
+            <div class="text-start">
+
                 <p>
                 <h6>Max.Speed</h6> <span style="color: red;">300 Km/h</span></p>
                 <p>
@@ -199,47 +188,322 @@
                 <p>
                 <h6>0-100 km/h</h6><span style="color: red;">2.7s</span></p>
             </div>
+            <div class="text-center">
+                <button id="Buy">Buy Now</button>
+            </div>
         </div>
     </section>
 
-    <section class="Option container justify-content-center align-items-center">
-        <div class="row pb-2">
-            <div class="img col-5 "><img src="/IMG/img_option/lamborghini-autentica-1675750838.jpg" alt=""
-                    width="500px" height="300px" class="imgage rounded mx-auto d-block">
-                <div class="overlay">
-                    <div class="text"></div>
-                </div>
-            </div>
-            <div class="img col-5 "><img src="/IMG/img_option/lamborghini-Aventador LP 780-4 Ultimae.jpg" alt=""
-                    width="500px" height="300px" class="imgage rounded mx-auto d-block">
-                    <div class="overlay">
-                        <div class="text">Hello World</div>
-                    </div>
-                </div>
+
+    <section class="Option container justify-content-center align-items-center revealUp">
+        <div class=" text-light text-center">
+            <h2 style="height: 20vh;">Best choice</h2>
         </div>
         <div class="row">
-            <div class="img col-5">
-                <img src="/IMG/img_option/Nissan-GTR-1.png" width="500px" height="300px" class="imgage rounded mx-auto d-block" alt="">
-                <div class="overlay">
-                    <div class="text">Hello World</div>
+            <div class="col">
+                <div class="row pb-2">
+                    <div class="img col-5 "><img src="/IMG/img_option/lamborghini-autentica-1675750838.jpg" alt="" width="300px"
+                            height="200px" class="imgage rounded mx-auto d-block">
+                        <div class="overlay">
+                            <div class="text">
+                                <h5 style="color: yellow;">Lamborghini Veneno Roadster</h5> <br>
+                                Động cơ: V12 6.5L <br>
+                                Tốc độ tối đa:khoảng 355 km/h <br>
+                                Trọng lượng: khoảng 1.490 kg.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img col-5 "><img src="/IMG/img_option/lamborghini-Aventador LP 780-4 Ultimae.jpg" alt=""
+                            width="300px" height="200px" class="imgage rounded mx-auto d-block">
+                        <div class="overlay">
+                            <div class="text">
+                                <h5 style="color: yellow;">Lamborghini Sián FKP 37</h5> <br>
+                                Động cơ: V12 hybrid <br>
+                                Tốc độ tối đa:khoảng 350 km/h <br>
+                                Trọng lượng: khoảng 1,600-1,800 kg
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="img col-5">
+                        <img src="/IMG/img_option/Nissan-GTR-1.png" width="300px" height="200px"
+                            class="imgage rounded mx-auto d-block" alt="">
+                        <div class="overlay">
+                            <div class="text">
+                                <h5 style="color: yellow;">Nissan 370Z Nismo</h5> <br>
+                                Động cơ: V6 3.7L <br>
+                                Tốc độ tối đa: Khoảng 250 km/h <br>
+                                Trọng lượng: khoảng 1.600 - 1.620 kg
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img col-5">
+                        <img src="/IMG/img_option/Mclaren-1.png" width="300px" height="200px"
+                            class="imgage rounded mx-auto d-block" alt="">
+                        <div class="overlay ">
+                            <div class="text">
+                                <h5 style="color: yellow;">McLaren 570S</h5> <br>
+                                Động cơ: 3.8L V8 Twin-Turbo <br>
+                                Tốc độ tối đa: Hơn 320 km/h. <br>
+                                Trọng lượng: khoảng 1.313 kg
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="img col-5">
-                <img src="/IMG/img_option/Mclaren-1.png" width="500px" height="300px" class="imgage rounded mx-auto d-block" alt="">
-                <div class="overlay">
-                    <div class="text">Hello World</div>
-                </div>
+            <div class="col text-light text-end">
+                <h1><span class="text-warning">H&D</span> - Where trust meets quality.</h1>
+                <p> Explore our selection of top-rated vehicles, meticulously chosen by those who demand the best in performance and style.</p>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        gsap.registerPlugin(ScrollTrigger);
+                    
+                        gsap.fromTo(".text-end", 
+                            { x: -200, opacity: 0 },  // Vị trí ban đầu: dịch chuyển từ bên trái và mờ dần
+                            { 
+                                x: 0, opacity: 1,  // Vị trí khi cuộn vào: trở về vị trí bình thường và hiển thị
+                                duration: 3,
+                                ease: "power4.out",  // Hiệu ứng easing mềm mại
+                                scrollTrigger: {
+                                    trigger: ".text-end",
+                                    start: "top 90%",  // Kích hoạt khi phần tử đi vào khung nhìn
+                                    end: "bottom 20%",  // Kết thúc khi cuộn qua
+                                    toggleActions: "play reverse play reverse",  // Kích hoạt lại khi cuộn tới và quay lại khi cuộn ra
+                                    scrub: true,  // Theo dõi cuộn để mượt mà hơn
+                                    onEnter: () => gsap.to(".text-end", { x: 0, opacity: 1 }),  // Khi cuộn đến, phần tử di chuyển vào
+                                    onLeave: () => gsap.to(".text-end", { x: -200, opacity: 0 })  // Khi cuộn ra, phần tử quay lại vị trí ban đầu
+                                }
+                            });
+                    });
+                </script>
             </div>
+        </div>
+    </section>
 
+
+    <section class="News revealUp">
+        <div class=" text-light text-center">
+            <h2>Information about vehicles</h2>
         </div>
 
+        <div class="wrapper ">
+            <div class="container">
+                <input type="radio" name="slide" id="c1" checked>
+                <label for="c1" class="card">
+                    <div class="row">
+                        <div class="icon">1</div>
+                        <div class="description">
+                            <h4>Bugatti Chiron Super Sport 300+</h4>
+                            <p>Breaking the 490 km/h barrier - unmatched speed</p>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c2">
+                <label for="c2" class="card">
+                    <div class="row">
+                        <div class="icon">2</div>
+                        <div class="description">
+                            <h4>Hennessey Venom F5</h4>
+                            <p>1817 horsepower, aiming for 500 km/h</p>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c3">
+                <label for="c3" class="card">
+                    <div class="row">
+                        <div class="icon">3</div>
+                        <div class="description">
+                            <h4>Lamborghini Aventador SVJ</h4>
+                            <p>V12 engine with 770 horsepower - aggressive power</p>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c4">
+                <label for="c4" class="card">
+                    <div class="row">
+                        <div class="icon">4</div>
+                        <div class="description">
+                            <h4>Ferrari SF90 Stradale</h4>
+                            <p>Hybrid technology, 986 horsepower - innovation</p>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c5">
+                <label for="c5" class="card">
+                    <div class="row">
+                        <div class="icon">5</div>
+                        <div class="description">
+                            <h4>McLaren Speedtail</h4>
+                            <p>Streamlined hypercar, 1035 horsepower</p>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c6">
+                <label for="c6" class="card">
+                    <div class="row">
+                        <div class="icon">6</div>
+                        <div class="description">
+                            <h4>SSC Tuatara</h4>
+                            <p>1750 horsepower, aiming for the fastest title</p>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c7">
+                <label for="c7" class="card">
+                    <div class="row">
+                        <div class="icon">7</div>
+                        <div class="description">
+                            <h4>Mercedes-AMG One</h4>
+                            <p>F1-inspired, hybrid technology with 1000 horsepower</p>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c8">
+                <label for="c8" class="card">
+                    <div class="row">
+                        <div class="icon">8</div>
+                        <div class="description">
+                            <h4>McLaren Speedtail</h4>
+                            <p>Streamlined hypercar, 1035 horsepower</p>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c9">
+                <label for="c9" class="card">
+                    <div class="row">
+                        <div class="icon">9</div>
+                        <div class="description">
+                            <h4>Ferrari</h4>
+                            <p>1750 horsepower, aiming for the fastest title</p>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c10">
+                <label for="c10" class="card">
+                    <div class="row">
+                        <div class="icon">10</div>
+                        <div class="description">
+                            <h4>Lamborghini</h4>
+                            <p>F1-inspired, hybrid technology with 1000 horsepower</p>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
     </section>
+    <section class="Design text-center">
+        <h6 class="text-primary mb-2">TESTIMONIALS</h6>
+        <h1 class="fw-bold text-light">Customers love our car dealership website!</h1>
+        <p id="testimonial-text" class="mt-3">Fantastic experience! The website made it so easy to compare different
+            models and find exactly what I was looking for.</p>
+        <h5 id="testimonial-name" class="mt-2">Michael B</h5>
+        <div class="stars">
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+        </div>
+        <div class="dots mt-3">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot active"></span>
+            <span class="dot"></span>
+        </div>
+        <div class="image-slider">
+            <div class="image-track">
+                <img src="../IMG/img_end/img_1.webp" alt="Image 1">
+                <img src="../IMG/img_end/img_2.webp" alt="Image 2">
+                <img src="../IMG/img_end/img_3.webp" alt="Image 3">
+                <img src="../IMG/img_end/img_4.webp" alt="Image 4">
+                <img src="../IMG/img_end/img_5.webp" alt="Image 5">
+                <img src="../IMG/img_end/img_6.webp" alt="Image 6">
+                <img src="../IMG/img_end/img_7.webp" alt="Image 7">
+                <img src="../IMG/img_end/img_8.webp" alt="Image 8">
+                <img src="../IMG/img_end/img_9.webp" alt="Image 9">
+                <img src="../IMG/img_end/img_10.webp" alt="Image 10">
+                <img src="../IMG/img_end/img_11.webp" alt="Image 11">
+                <img src="../IMG/img_end/img_12.webp" alt="Image 12">
+                <img src="../IMG/img_end/img_13.webp" alt="Image 13">
+                <img src="../IMG/img_end/img_14.webp" alt="Image 14">
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const testimonials = [
+                    {
+                        text: "Fantastic experience! The website made it so easy to compare different models and find exactly what I was looking for.",
+                        name: "Michael B"
+                    },
+                    {
+                        text: "I was able to schedule a test drive seamlessly. The car listings were comprehensive, with all the details I needed.",
+                        name: "Jessica L"
+                    },
+                    {
+                        text: "The customer support was outstanding. They answered all my questions and made the buying process smooth and hassle-free.",
+                        name: "David S"
+                    },
+                    {
+                        text: "I found my dream car at a great price. The filters on the website made narrowing down my options so easy!",
+                        name: "Sarah P"
+                    },
+                    {
+                        text: "Great variety of cars and excellent website design. I felt like I had all the information at my fingertips to make the right choice.",
+                        name: "Chris M"
+                    },
+                    {
+                        text: "Buying my car online was quick and convenient, and the follow-up service has been amazing. Highly recommended!",
+                        name: "Emily T"
+                    }
+                ];
 
-    <section class="Design">
+                const textElement = document.getElementById('testimonial-text');
+                const nameElement = document.getElementById('testimonial-name');
+                let slideIndex = 0;
+                const dots = document.getElementsByClassName("dot");
 
-    </section>
-    <section class="News">
+                // Function to display the current testimonial with fade effect
+                function showTestimonial(index) {
+                    // Clear the active dot class
+                    for (let j = 0; j < dots.length; j++) {
+                        dots[j].className = dots[j].className.replace(" active", "");
+                    }
 
+                    // Add active class to the current dot
+                    dots[index].className += " active";
+
+                    // Fade out the text
+                    textElement.style.opacity = 0;
+                    nameElement.style.opacity = 0;
+
+                    // Wait for fade out to complete before updating the content
+                    setTimeout(() => {
+                        textElement.innerHTML = testimonials[index].text;
+                        nameElement.innerHTML = testimonials[index].name;
+
+                        // Fade the text back in
+                        textElement.style.opacity = 1;
+                        nameElement.style.opacity = 1;
+                    }, 500); // Time for fade-out effect
+                }
+
+                // Function to automatically transition between testimonials
+                function showAutoSlide() {
+                    slideIndex++;
+                    if (slideIndex >= testimonials.length) {
+                        slideIndex = 0;
+                    }
+                    showTestimonial(slideIndex);
+                    setTimeout(showAutoSlide, 3000); // Change testimonial every 4 seconds
+                }
+
+                // Start the auto-transition
+                showAutoSlide();
+            });
+        </script>
     </section>
     <section class="Footer text-start ">
         <div class="container">
@@ -364,6 +628,7 @@
             </div>
         </div>
         <hr>
+
         <div class="container">
             <div class="row ">
                 <div class="col-10">
@@ -393,11 +658,60 @@
                     liên hệ các Nhà phân phối chính hãng của H&D Việt Nam để cập nhật thông tin chi tiết.</p>
             </div>
         </div>
-
     </section>
-
-
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        gsap.registerPlugin(ScrollTrigger);
 
+        // Thêm hiệu ứng cho từng phần tử có class 'revealUp'
+        gsap.utils.toArray(".revealUp").forEach(function (elem) {
+            ScrollTrigger.create({
+                trigger: elem,
+                start: "top 90%",  // Khi phần tử nằm trong 90% trên của màn hình
+                end: "bottom 10%", // Khi phần tử nằm trong 10% dưới của màn hình
+                onEnter: function () {
+                    gsap.fromTo(
+                        elem,
+                        { y: 100, autoAlpha: 0 },  // Vị trí ban đầu: dịch xuống và mờ
+                        {
+                            duration: 1.25,
+                            y: 0,
+                            autoAlpha: 1,  // Hiển thị lên
+                            ease: "back",
+                            overwrite: "auto"
+                        }
+                    );
+                },
+                onLeave: function () {
+                    gsap.to(elem, { autoAlpha: 0, overwrite: "auto" });  // Ẩn phần tử khi rời khỏi màn hình
+                },
+                onEnterBack: function () {
+                    gsap.fromTo(
+                        elem,
+                        { y: -100, autoAlpha: 0 },  // Vị trí ban đầu: từ phía trên màn hình
+                        {
+                            duration: 1.25,
+                            y: 0,
+                            autoAlpha: 1,
+                            ease: "back",
+                            overwrite: "auto"
+                        }
+                    );
+                },
+                onLeaveBack: function () {
+                    gsap.to(elem, { autoAlpha: 0, overwrite: "auto" });
+                }
+            });
+        });
+    });
+
+
+</script>
+<script src="../boostrap/js/bootstrap.bundle.min.js"></script>
+<script src="../js/js.js"></script>
+<script src="../js/server.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
 
 </html>

@@ -6,6 +6,7 @@
 body {
   font-family: sans-serif;
   display: grid;
+  background-image: url(/IMG/img_design/stars-bg.png);
 }
 
 .Header {
@@ -13,17 +14,17 @@ body {
   height: 80px;
   position: sticky;
   top: 0;
-  background-color: black;
-  z-index: 2;
+  background-image: url(/IMG/img_design/stars-bg.png);
+  z-index: 3;
   display: flex;
 }
 
-.Main-container{
+.Main-container {
   margin-top: -100px;
-  background-color: black;
+  background-image: url(/IMG/img_design/stars-bg.png);
 }
 
-.Main-container.text-center {
+.Main .text-center {
   z-index: 0;
   position: absolute;
   align-items: center;
@@ -34,15 +35,24 @@ body {
   justify-content: center;
   margin-top: 400px;
   text-shadow: 3px 3px rgba(41, 29, 29);
-  opacity: 0;
+  opacity: 1;
   animation: anim 5s forwards;
+  
+}
+@keyframes anim {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 #Buy {
   padding: 17px 40px;
   border-radius: 50px;
   cursor: pointer;
-  border: 0;
   background-color: white;
   box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
   letter-spacing: 1.5px;
@@ -69,46 +79,46 @@ body {
 }
 
 .Topcar {
-  height: auto;
+  margin-top: 200px;
+  height: 100vh;
+  height: 700px;
   width: 100%;
-  background-color: white;
-
 }
-
 #Teme {
+  box-shadow: -5px -5px 20px white;
+  margin-right: 50px;
+  padding: 20px 20px;
+  border: 1px solid white;
   float: right;
   padding-top: 50px;
+  color: white;
+  transition: transform ease-in-out 2s;
+  border-radius: 20px;
 }
-
-#content {
-  text-align: center;
+#Teme:hover{
+  transform: scale(1.1);
 }
 
 .New {
   height: 600px;
   width: 100%;
-  background-image: -webkit-linear-gradient(rgb(0, 0, 0), rgb(34, 34, 34), rgb(255, 255, 255));
+  height: 100vh;
 }
 
 .Option {
   height: auto;
   width: 100%;
-  background-color: white;
-  padding-left: 200px;
-}
-
-.Design {
-  height: 900px;
-  width: 100%;
-
+  background-color: white; 
+  padding-top: 100px;
+  background-image: url(/IMG/img_design/stars-bg.png);
 }
 
 .News {
-  height: 900px;
+  margin-top: 200px;
+  height: auto;
   width: 100%;
-  background-color: white;
+  
 }
-
 .Footer {
   height: auto;
   width: 100%;
@@ -116,6 +126,7 @@ body {
   color: white;
   clear: both;
   font-size: 12px;
+  
 }
 
 li {
@@ -133,161 +144,7 @@ a {
 .btn:hover {
   background-color: rgb(93 24 220);
 }
-
-.info {
-  text-align: center;
-}
-
-.New li {
-  position: relative;
-  float: left;
-  width: 200px;
-  height: 200px;
-  margin: 5px;
-  padding: 0;
-  list-style: none;
-
-}
-
-.New li a {
-  display: inline-block;
-  vertical-align: top;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-.New li h3 {
-  margin: 0;
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.9);
-  /* Transparent white */
-}
-
-.New h6 {
-  color: #ECF0F1;
-  text-align: center;
-
-}
-
-.New li p {
-  font-size: 12px;
-  line-height: 1.5;
-  color: azure;
-  /* Transparent white */
-}
-
-.New li .normal {
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  /* $clouds */
-  color: rgba(52, 73, 94, 0.6);
-  /* $wet-asphalt with transparency */
-  box-shadow: inset 0 2px 20px rgba(236, 240, 241, 0.8);
-  /* Darken $clouds */
-  text-align: center;
-  font-size: 50px;
-  line-height: 200px;
-}
-
-.New {
-  padding-left: 100px;
-}
-
-.form button {
-  border: none;
-  background: none;
-  color: #8b8ba7;
-}
-
-/* styling of whole input container */
-.form {
-  --timing: 0.3s;
-  --width-of-input: 200px;
-  --height-of-input: 40px;
-  --border-height: 2px;
-  --input-bg: #fff;
-  --border-color: rgb(93 24 220);
-  --border-radius: 10px;
-  --after-border-radius: 1px;
-  position: relative;
-  width: var(--width-of-input);
-  height: var(--height-of-input);
-  display: flex;
-  align-items: center;
-  padding-inline: 0.8em;
-  border-radius: var(--border-radius);
-  transition: border-radius 0.5s ease;
-  background: var(--input-bg, #fff);
-}
-
-/* styling of Input */
-.input {
-  font-size: 0.9rem;
-  background-color: transparent;
-  width: 100%;
-  height: 100%;
-  padding-inline: 0.5em;
-  padding-block: 0.7em;
-  border: none;
-}
-
-/* styling of animated border */
-.form:before {
-  content: "";
-  position: absolute;
-  background: var(--border-color);
-  transform: scaleX(0);
-  transform-origin: center;
-  width: 100%;
-  height: var(--border-height);
-  left: 0;
-  bottom: 0;
-  border-radius: 1px;
-  transition: transform var(--timing) ease;
-}
-
-
-input:focus {
-  outline: none;
-}
-
-/* here is code of animated border */
-.form:focus-within:before {
-  transform: scale(1);
-}
-
-/* styling of close button */
-/* == you can click the close button to remove text == */
-.reset {
-  border: none;
-  background: none;
-  opacity: 0;
-  visibility: hidden;
-}
-
-/* close button shown when typing */
-input:not(:placeholder-shown)~.reset {
-  opacity: 1;
-  visibility: visible;
-}
-
-/* sizing svg icons */
-.form svg {
-  width: 17px;
-  margin-top: 3px;
-}
-
-@keyframes anim {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
+  
 .Footer a {
   color: snow;
   text-decoration: none;
@@ -336,37 +193,324 @@ input:not(:placeholder-shown)~.reset {
   bottom: 0;
   left: 1;
   right: 1;
-  background-color:white;
+  background-image: url(/IMG/img_design/stars-bg.png);
+  color: white;
   overflow: hidden;
-  width: 500px;
-  height: 300px;
+  width: 300px;
+  height: 200px;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
   -webkit-transition: .3s ease;
   transition: .3s ease;
   border-radius: 5px;
+  text-align: center;
+  padding-top: 70px;
+  font-size: 10px;
 }
 
-.img:hover .overlay {
+.Option .img:hover .overlay {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
 }
 
-.text {
-  color: white;
-  font-size: 20px;
+.Option .img {
+  position: relative;
+  width: auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  height: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
   position: absolute;
   top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+.text_option {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
   text-align: center;
 }
 
-.img {
-  position: relative;
-  width: auto;
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+  /* Increased duration for a smoother fade */
+  animation-timing-function: ease-in-out;
+  /* Smooth fade-in and fade-out */
+  animation-fill-mode: forwards;
+  /* Keep the end state after the animation finishes */
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.text-end {
+  padding-top: 150px;
+}
+.revealUp {
+  opacity: 0;     /* Ẩn ban đầu */
+  transform: translateY(100px);  /* Dịch chuyển phần tử xuống */
+  transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+}
+
+.Design {
+  height: 100vh;
+  padding: 40px;
+  color: #ffc107;
+}
+
+.Design h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+#testimonial-text {
+  font-size: 18px;
+  color: #ffc107;;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#testimonial-name {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.Design .stars {
+  font-size: 24px;
+  color: #ffc107;
+}
+
+.Design .dots {
+  display: flex;
+  justify-content: center;
+}
+
+.Design .dot {
+  height: 8px;
+  width: 8px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.Design .dot.active {
+  background-color: #007bff;
+}
+
+.image-slider {
+  margin-top: 100px;
+  width: 100%; /* Chiều rộng slider */
+  overflow: hidden; /* Ẩn phần ngoài khung */
+  background-color: #333; /* Màu nền */
+}
+
+.image-track {
+  display: flex;
+  width: calc(200px * 6); /* Tổng chiều rộng của tất cả ảnh nhân đôi */
+  animation: scroll 20s linear infinite; /* Animation cuộn */
+}
+
+.image-track img {
+  width: 200px; /* Kích thước ảnh */
+  height: auto;
+  margin-right: 10px; /* Khoảng cách giữa các ảnh */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Bắt đầu từ vị trí ban đầu */
+  }
+  100% {
+    transform: translateX(-50%); /* Di chuyển nửa đoạn đường - tương ứng với 6 ảnh */
+  }
+}
+
+.wrapper {
+  padding-left: 100px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.News .container {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+
+.card {
+  width: 60px;  
+  height: auto; 
+  border-radius: 1rem;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 0 10px;
+  display: flex;
+  align-items: flex-end;
+  transition: .6s cubic-bezier(.28,-0.03,0,.99);
+  box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card  .row {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card  .row .icon {
+  background: #223;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.card .row .description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow:visible;
+  height: auto;
+  width: 380px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+
+.description p {
+  color: #b0b0ba;
+  padding-top: 5px;
+}
+
+.description h4 {
+  text-transform: uppercase;
+}
+.description p, .description h4 {
+  padding: 5px 10px; /* Thêm khoảng cách để chữ không chạm sát mép */
+  margin: 0; /* Đảm bảo không có khoảng cách quá lớn */
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  width: 450px;
+}
+
+input:checked + label .description {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+
+  background-image: url('../IMG/img_infomation/img_1.webp');
+}
+.card[for="c2"] {
+  background-image: url('../IMG/img_infomation/img_2.webp');
+}
+.card[for="c3"] {
+  background-image: url('../IMG/img_infomation/img_3.webp');
+}
+.card[for="c4"] {
+  background-image: url('../IMG/img_infomation/img_4.webp');
+}
+.card[for="c5"] {
+  background-image: url('../IMG/img_infomation/img_5.webp');
+}
+.card[for="c6"] {
+  background-image: url('../IMG/img_infomation/img_6.webp');
+}
+.card[for="c7"] {
+  background-image: url('../IMG/img_infomation/img_7.webp');
+}
+.card[for="c8"] {
+  background-image: url('../IMG/img_infomation/img_8.webp');
+}
+.card[for="c9"] {
+  background-image: url('../IMG/img_infomation/img_9.webp');
+}
+.card[for="c10"] {
+  background-image: url('../IMG/img_infomation/img_10.webp');
 }
