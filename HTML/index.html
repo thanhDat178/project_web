@@ -19,7 +19,7 @@
         <div class="container">
             <div class="row align-items-start pt-2 ">
                 <div class="col">
-                    <img src="../IMG/logo.png" alt="" height="62px">
+                    <img src="../IMG/logo-removebg-preview.png" alt="" height="62px">
                 </div>
                 <div class="col px-4">
                     <nav class="navbar navbar-expand-lg">
@@ -33,7 +33,7 @@
                                     style="font-size: 16px;" href="../HTML/design.html">Design</a>
                             </li>
                             <li><a class="navbar-brand link-light link-opacity-25 link-opacity-100-hover"
-                                    style="font-size: 16px;" href="#">News</a>
+                                    style="font-size: 16px;" href="../HTML/news.html">News</a>
                             </li>
                             <li><a class="navbar-brand link-light link-opacity-25 link-opacity-100-hover"
                                     style="font-size: 16px;" href="#">Book</a>
@@ -68,8 +68,8 @@
         </div>
     </section>
 
-    <section class="Main ">
-        <div class="text-center text-white ">
+    <section class="Main">
+        <div class="text-center text-white revealUp">
             <h2>Car Dealership</h2>
             <p>Drive with confidence knowing you made the right choice! <br>
                 Discover a world of comfort behind the wheel! Rev up your life with our exceptional cars! Experience ...
@@ -77,7 +77,7 @@
             <h5>Experience driving like never before...</h5>
         </div>
 
-        <video autoplay loop playsinline muted="true" width="100%" height="900px">
+        <video autoplay loop playsinline muted="true" width="100%" height="1100px">
             <source src="../IMG/video-car-main.mp4">
         </video>
     </section>
@@ -196,11 +196,11 @@
     </section>
 
 
-    <section class="Option container justify-content-center align-items-center revealUp">
-        <div class=" text-light text-center">
+    <section class="Option container justify-content-center align-items-center ">
+        <div class=" text-light text-center ">
             <h2 style="height: 20vh;">Best choice</h2>
         </div>
-        <div class="row">
+        <div class="row revealUp">
             <div class="col">
                 <div class="row pb-2">
                     <div class="img col-5 "><img src="../IMG/img_option/lamborghini-autentica-1675750838.jpg" alt="" width="300px"
@@ -261,19 +261,19 @@
                         gsap.registerPlugin(ScrollTrigger);
                     
                         gsap.fromTo(".text-end", 
-                            { x: -200, opacity: 0 },  // Vị trí ban đầu: dịch chuyển từ bên trái và mờ dần
+                            { x: -200, opacity: 0 },
                             { 
-                                x: 0, opacity: 1,  // Vị trí khi cuộn vào: trở về vị trí bình thường và hiển thị
+                                x: 0, opacity: 1,  
                                 duration: 3,
-                                ease: "power4.out",  // Hiệu ứng easing mềm mại
+                                ease: "power4.out", 
                                 scrollTrigger: {
                                     trigger: ".text-end",
-                                    start: "top 90%",  // Kích hoạt khi phần tử đi vào khung nhìn
-                                    end: "bottom 20%",  // Kết thúc khi cuộn qua
-                                    toggleActions: "play reverse play reverse",  // Kích hoạt lại khi cuộn tới và quay lại khi cuộn ra
-                                    scrub: true,  // Theo dõi cuộn để mượt mà hơn
-                                    onEnter: () => gsap.to(".text-end", { x: 0, opacity: 1 }),  // Khi cuộn đến, phần tử di chuyển vào
-                                    onLeave: () => gsap.to(".text-end", { x: -200, opacity: 0 })  // Khi cuộn ra, phần tử quay lại vị trí ban đầu
+                                    start: "top 90%", 
+                                    end: "bottom 20%",  
+                                    toggleActions: "play reverse play reverse",  
+                                    scrub: true, 
+                                    onEnter: () => gsap.to(".text-end", { x: 0, opacity: 1 }),  
+                                    onLeave: () => gsap.to(".text-end", { x: -200, opacity: 0 })  
                                 }
                             });
                     });

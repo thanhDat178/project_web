@@ -14,19 +14,57 @@
 </head>
 
 <body>
-    <header>
-        <nav class="nav-bar">
-            <div class="logo">
-                <img src="/IMG/logo.png" alt="" width="80px">
+    <section class="Header justify-content-center align-items-center">
+        <div class="container">
+            <div class="row align-items-start pt-2 ">
+                <div class="col">
+                    <img src="../IMG/logo-removebg-preview.png" alt="" height="62px">
+                </div>
+                <div class="col px-4">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container">
+                            <li>
+                                <a class="navbar-brand link-light link-opacity-25 link-opacity-100-hover "
+                                    style="font-size: 16px;" href="../HTML/index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="navbar-brand link-light link-opacity-25 link-opacity-100-hover "
+                                    style="font-size: 16px;" href="../HTML/design.html">Design</a>
+                            </li>
+                            <li><a class="navbar-brand link-light link-opacity-25 link-opacity-100-hover"
+                                    style="font-size: 16px;" href="../HTML/news.html">News</a>
+                            </li>
+                            <li><a class="navbar-brand link-light link-opacity-25 link-opacity-100-hover"
+                                    style="font-size: 16px;" href="#">Book</a>
+                            </li>
+                            <div class="dropdown">
+                                <button class="btn btn-light dropdown-toggle  " type="button" data-bs-toggle="dropdown"
+                                    style="font-size: 16px;" aria-expanded="false">
+                                    Store
+                                </button>
+                                <ul class="dropdown-menu bg-secondary-subtle text-secondary-emphasis">
+                                    <li><a class="dropdown-item" href="#">Toyota</a></li>
+                                    <li><a class="dropdown-item" href="#">Mazda</a></li>
+                                    <li><a class="dropdown-item" href="#">Nissan</a></li>
+                                    <li><a class="dropdown-item" href="#">Lamborghini</a></li>
+                                    <li><a class="dropdown-item" href="#">VinFast</a></li>
+                                    <li><a class="dropdown-item" href="#">Mercesdes-Benz</a></li>
+                                    <li><a class="dropdown-item" href="#">Maserati</a></li>
+                                    <li><a class="dropdown-item" href="#">Mclaren</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </nav>
+                </div>
+                <div class="col d-flex flex-row-reverse px-5">
+                    <div class="p-2"><a href="Login.html" target="_blank"><button type="button"
+                                class="btn btn-light">Sign in</button></a>
+                    </div>
+                </div>
             </div>
-            <ul class="menu-items">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="design.html">Design</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Booking</a></li>
-            </ul>
-        </nav>
-    </header>
+        </div>
+    </section>
 
     <section class="section-one">
         <div class="container_x">
@@ -56,19 +94,42 @@
         </div>
     </section>
 
-    <section>
+    <section class="sec">
         <div class="container_x">
             <div class="left-side hand">
                 <img class="gold image" src="../IMG/img_design/img_car-1.png" alt="">
             </div>
             <div class="right-side">
                 <img src="../IMG/img_design/star.png" class="star star-s2" alt="">
-                <div class="title">
+                <div class="title text-end">
                     <h1>3D wireframe <br></h1>
                     <h2 class="text-secondary">Design of a car</h2>
+
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function () {
+                            gsap.registerPlugin(ScrollTrigger);
+
+                            gsap.fromTo(".text-end",
+                                { x: -200, opacity: 0 },
+                                {
+                                    x: 0, opacity: 1,
+                                    duration: 5,
+                                    ease: "power4.out",
+                                    scrollTrigger: {
+                                        trigger: ".text-end",
+                                        start: "top 80%",
+                                        end: "bottom 40%",
+                                        toggleActions: "play reverse play reverse",
+                                        scrub: true,
+                                        onEnter: () => gsap.to(".text-end", { x: 0, opacity: 1 }),
+                                        onLeave: () => gsap.to(".text-end", { x: -200, opacity: 0 })
+                                    }
+                                });
+                        });
+                    </script>
                 </div>
 
-                <p class="p">
+                <p class="p text-end">
                     This design not only showcases the technical structure but also emphasizes the meticulous attention
                     to detail in constructing each element. It's a creative representation often used in CAD software or
                     simulation technology to assess the features and aesthetics of a product before real-world
@@ -81,13 +142,13 @@
         </div>
     </section>
 
-    <section>
+    <section class="sec">
         <div class="container_x">
-            <div class="left-side">
+            <div class="left-side ">
                 <div class="title">
                     <h1>Non-Uniform Rational B-Splines & <br> Aerodynamic Wireframe Model</h1>
                 </div>
-                <div class="type g-type">
+                <div class="type g-type ">
                     <p>Non-Uniform Rational B-Splines</p>
                     <p>The NURBS model excels in creating smooth, precise designs that optimize the aesthetics and
                         aerodynamic properties of the vehicle.</p>
@@ -110,7 +171,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="sec">
         <div class="container_x">
             <div class="left-side">
                 <img src="../IMG/img_design/star.png" class="star-s4 star" alt="">

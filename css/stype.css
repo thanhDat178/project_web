@@ -11,14 +11,14 @@ body {
 
 .Header {
   width: 100%;
-  height: 80px;
   position: sticky;
   top: 0;
-  background-image: url(/IMG/img_design/stars-bg.png);
   z-index: 3;
   display: flex;
 }
-
+.Main{
+  margin-top: -300px;
+}
 .Main-container {
   margin-top: -100px;
   background-image: url(/IMG/img_design/stars-bg.png);
@@ -33,7 +33,7 @@ body {
   right: 0;
   bottom: 0;
   justify-content: center;
-  margin-top: 400px;
+  margin-top: 300px;
   text-shadow: 3px 3px rgba(41, 29, 29);
   opacity: 1;
   animation: anim 7s forwards;
@@ -371,7 +371,7 @@ a {
   margin-top: 100px;
   width: 100%; /* Chiều rộng slider */
   overflow: hidden; /* Ẩn phần ngoài khung */
-  background-color: #333; /* Màu nền */
+  
 }
 
 .image-track {
@@ -416,6 +416,7 @@ a {
   width: 60px;  
   height: auto; 
   border-radius: 1rem;
+  border: none;
   background-size: cover;
   cursor: pointer;
   overflow: hidden;
