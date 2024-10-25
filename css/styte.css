@@ -2,12 +2,13 @@ body {
   background-color: white;
 }
 header {
+  font-family: "Times New Roman", Times, serif;
   width: 100%;
   height: 150px;
-  background-color: black;
   top: 0;
   position: relative;
   z-index: 1;
+  background-image: url(../img/image.png);
 }
 .dropdown {
   padding-left: 30px;
@@ -20,12 +21,13 @@ header {
   z-index: 1;
 }
 .dropdown-item:hover {
-  background:black;
-  color:white;
+  background: black;
+  color: white;
 }
 nav {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
   width: 100%;
-  background-color: white;
   margin-left: left;
   position: sticky;
   top: 0;
@@ -41,6 +43,9 @@ nav {
   margin-left: 50px;
   text-decoration: none;
 }
+#menu .p-2:hover {
+  color: yellow;
+}
 #font {
   font-family: Serif;
   margin-left: 50px;
@@ -53,19 +58,20 @@ section {
 }
 aside {
   width: 70%;
-  height: 500px;
-  background-color: rgb(238, 238, 239);
+  height: 1000px;
+  border: 1px groove rgb(112, 102, 102);
+  border-radius: 5px;
   float: left;
   justify-content: space-between;
   padding: 20px;
-  overflow: auto; cuon trang
+  overflow: auto; /*cuon trang */
+  overflow-x: hidden;
 }
 .table1 {
   margin: auto;
   width: 100%;
   border-collapse: collapse;
   text-align: center;
-  background-color: rgb(160, 114, 114);
 }
 th {
   margin: auto;
@@ -87,6 +93,9 @@ td {
   background-color: aquamarine;
   height: 50px;
   text-align: center;
+}
+nav p span {
+  color: chartreuse;
 }
 #title {
   list-style-type: none;
@@ -113,7 +122,7 @@ svg {
 .vehicle-tile img {
   width: 70%;
 }
-#menu li{
+#menu li {
   font-size: 20px;
   text-indent: 10px;
 }
