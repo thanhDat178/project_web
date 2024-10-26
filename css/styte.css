@@ -14,7 +14,7 @@ header {
   padding-left: 30px;
   margin-left: 40px;
   z-index: 1;
-  position: sticky;
+  position: sticky; 
   position: absolute; /* Định vị menu liên quan đến .menu */
 }
 .dropdown-menu {
@@ -29,7 +29,7 @@ nav {
   font-size: 30px;
   width: 100%;
   margin-left: left;
-  position: sticky;
+
   top: 0;
 }
 #menu ul {
@@ -59,7 +59,6 @@ section {
 aside {
   width: 70%;
   height: 1000px;
-  border: 1px groove rgb(112, 102, 102);
   border-radius: 5px;
   float: left;
   justify-content: space-between;
