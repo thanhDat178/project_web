@@ -32,7 +32,33 @@ li {
     text-decoration: underline;
     transform: scale(1.1);
 }
+#main{
+    margin-top: -100px;
+}
+#main .text-light {
+    z-index: 0;
+    position: absolute;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    margin-top: 200px;
+    text-shadow: 3px 3px rgba(41, 29, 29);
+    opacity: 1;
+    animation: anim 7s forwards;
 
+}
+@keyframes anim {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
 #nav .row {
     margin-top: 50px;
     padding-top: 10px;
