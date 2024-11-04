@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lich Hen</title>
+    <link rel="stylesheet" href="../boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/LichHen.css">
+</head>
+<body>
+    <section class="Header justify-content-center align-items-center">
+        <div class="container">
+            <div class="row align-items-start pt-2 ">
+                <div class="col">
+                    <img src="../IMG/logo-removebg-preview.png" alt="" height="62px">
+                </div>
+                <div class="col px-4">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container">
+                            <li>
+                                <a class="navbar-brand link-light link-opacity-25 link-opacity-100-hover "
+                                    style="font-size: 16px;" href="../HTML/index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="navbar-brand link-light link-opacity-25 link-opacity-100-hover "
+                                    style="font-size: 16px;" href="../HTML/design.html">Design</a>
+                            </li>
+                            <li><a class="navbar-brand link-light link-opacity-25 link-opacity-100-hover"
+                                    style="font-size: 16px;" href="../HTML/news.html">News</a>
+                            </li>
+                            <li><a class="navbar-brand link-light link-opacity-25 link-opacity-100-hover"
+                                    style="font-size: 16px;" href="../HTML/booking.html">Book</a>
+                            </li>
+                            <div class="dropdown">
+                                <button class="btn btn-light dropdown-toggle  " type="button" data-bs-toggle="dropdown"
+                                    style="font-size: 16px;" aria-expanded="false">
+                                    Store
+                                </button>
+                                <ul class="dropdown-menu bg-secondary-subtle text-secondary-emphasis">
+                                    <li><a class="dropdown-item" href="#">Toyota</a></li>
+                                    <li><a class="dropdown-item" href="#">Mazda</a></li>
+                                    <li><a class="dropdown-item" href="#">Nissan</a></li>
+                                    <li><a class="dropdown-item" href="#">Lamborghini</a></li>
+                                    <li><a class="dropdown-item" href="#">VinFast</a></li>
+                                    <li><a class="dropdown-item" href="#">Mercesdes-Benz</a></li>
+                                    <li><a class="dropdown-item" href="#">Maserati</a></li>
+                                    <li><a class="dropdown-item" href="#">Mclaren</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </nav>
+                </div>
+                <div class="col d-flex flex-row-reverse px-5">
+                    <div class="p-2"><a href="Login.html" target="_blank"><button type="button"
+                                class="btn btn-light">Sign in</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec_1">
+        <div class="container mt-5 mb-5 text-center text-light">
+            <h1>Đặt lịch</h1>
+            <p class="text-center">Quý khách vui lòng điền vào mẫu dưới đây và gửi yêu cầu. Đại lý H&D Sài Gòn sẽ liên hệ với Quý khách trong vòng 24h để xác nhận ngày và thời gian sửa chữa.</p>
+    
+            <form>
+                <!-- Vehicle Information Section -->
+                <h5><b>THÔNG TIN XE</b></h5>
+    
+                <div class="mb-3">
+                    <label for="dongXe" class="form-label">Dòng xe*</label>
+                    <select id="dongXe" class="form-select" required>
+                        <option selected disabled>Dòng xe</option>
+                        <option value="Sedan">Sedan</option>
+                        <option value="SUV">SUV</option>
+                        <option value="Truck">Truck</option>
+                        <option value="Sport">Sport</option>
+                    </select>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="ngaySuaChua" class="form-label">Chọn ngày Đặt lịch*</label>
+                    <input type="date" id="ngaySuaChua" class="form-control" required>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="noiDungSuaChua" class="form-label">Nội dung Đặt lịch*</label>
+                    <textarea id="noiDungSuaChua" class="form-control" rows="3" required></textarea>
+                </div>
+    
+                <!-- Contact Information Section -->
+                <h5><b>THÔNG TIN LIÊN HỆ</b></h5>
+    
+                <div class="mb-3">
+                    <label for="hoVaTen" class="form-label">Họ và tên*</label>
+                    <input type="text" id="hoVaTen" class="form-control" placeholder="Vui lòng nhập Họ và tên của bạn" required>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="dienThoai" class="form-label">Điện thoại*</label>
+                    <input type="tel" id="dienThoai" class="form-control" required>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="diaChi" class="form-label">Địa chỉ*</label>
+                    <input type="text" id="diaChi" class="form-control" required>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="tinhThanhPho" class="form-label">Tỉnh/Thành phố*</label>
+                    <select id="tinhThanhPho" class="form-select" required>
+                        <option selected disabled>Chọn</option>
+                        <option value="HCM">Hồ Chí Minh</option>
+                        <option value="HN">Hà Nội</option>
+                        <option value="DN">Đà Nẵng</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email*</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+    
+                <div class="text-center">
+                    <button type="submit" class="btn btn-danger w-100">GỬI ĐI</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="Footer text-start ">
+        <div class="container">
+            <div class="row border border-light mt-5">
+                <div class="col-10">
+                    <p>
+                    <h6>Kết nối với H&D
+                    </h6>Hãy giữ kết nối với chúng tôi để nâng tầm trải nghiệm dịch vụ hàng chính hãng</p>
+                </div>
+                <div class="col-2 align-content-center">
+                    <button class="btn btn-outline-light">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pt-5">
+            <div class="row text-light">
+                <div class="col-4 fs-6">
+                    Car Companies
+                </div>
+                <div class="col-4 fs-6">
+                    Car models
+                </div>
+                <div class="col-4 fs-6">
+                    Design
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-4">
+                    <li><a href="">Toyota</a></li>
+                </div>
+                <div class="col-4">
+                    <li><a href="">SUV</a></li>
+                </div>
+                <div class="col-4">
+                    <li><a href="">Schedule a car design appointment</a></li>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <li><a href="">Mazda</a></li>
+                </div>
+                <div class="col-4">
+                    <li><a href="">Sedan</a></li>
+                </div>
+                <div class="col-4">
+                    <li><a href="">Accessory</a></li>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <li><a href="">Nissan</a></li>
+                </div>
+                <div class="col-4">
+                    <li><a href="">Coupe</a></li>
+                </div>
+                <div class="col-4">
+                    <li><a href="">Design Available</a></li>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <li><a href="">Lamborghini</a></li>
+                </div>
+                <div class="col-4">
+                    <li><a href="">Cabriolet</a></li>
+                </div>
+                <div class="col-4">
+                    <li><a href=""></a></li>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <li><a href="">VinFast</a></li>
+                </div>
+                <div class="col-4">
+                    <li><a href="">Pickup</a></li>
+                </div>
+                <div class="col-4">
+                    <li><a href=""></a></li>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <li><a href="">Mercesdes-Benz</a></li>
+                </div>
+                <div class="col-4">
+                    <li><a href="">Minivan</a></li>
+                </div>
+                <div class="col-4">
+                    <li><a href=""></a></li>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <li><a href="">Maserati</a></li>
+                </div>
+                <div class="col-4">
+                    <li><a href=""></a></li>
+                </div>
+                <div class="col-4">
+                    <li><a href=""></a></li>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <li><a href="">Mclaren</a></li>
+                </div>
+                <div class="col-4">
+                    <li><a href=""></a></li>
+                </div>
+                <div class="col-4">
+                    <li><a href=""></a></li>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+
+        <div class="container">
+            <div class="row ">
+                <div class="col-10">
+                    <li><a href="">Contact :</a></li>
+                </div>
+                <div class="col-1">
+                    <a href="https://www.facebook.com/profile.php?id=100014803425379" class="icon me-2"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://myaccount.google.com/?gar=WzJd&hl=vi&utm_source=OGB&utm_medium=act"
+                        class="icon me-2"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="https://github.com/nguyenhuy601" class="icon me-2"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/huy-nguy%E1%BB%85n-29b503331/" class="icon me-2"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row-4">
+                <p style="font-size: 8px;">Giá bán lẻ đề xuất
+                    Là giá bán lẻ được đề xuất bởi Nhà sản xuất, đã bao gồm thuế nhập khẩu, thuế tiêu thụ đặc biệt và
+                    thuế
+                    giá trị gia tăng nhưng chưa bao gồm lệ phí đăng kiểm xe ô tô, lệ phí trước bạ, bảo hiểm trách nhiệm
+                    dân
+                    lẻ
+                    chính thức cho từng sản phẩm sẽ được quyết định theo chính sách bán hàng của Nhà phân phối, xin vui
+                    lòng
+                    liên hệ các Nhà phân phối chính hãng của H&D Việt Nam để cập nhật thông tin chi tiết.</p>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="../boostrap/js/bootstrap.bundle.min.js"></script>
+</html>

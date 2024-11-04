@@ -1,4 +1,0 @@
-import { defineCustomElements, setNonce } from '../esm/loader.js';
-export { setNonce };
-
-defineCustomElements(window);

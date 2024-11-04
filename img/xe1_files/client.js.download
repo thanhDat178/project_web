@@ -1,4 +1,0 @@
-import"./client2.js";import"vue";import"@seamless/logger";import"@seamless/store";import"@owc/aem-utils";import"@seamless/one-context";/**
- * @preserve
- * Licenses of bundled dependencies can be found in dependencies-licenses.txt
- */

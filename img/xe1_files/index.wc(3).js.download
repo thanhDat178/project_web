@@ -1,4 +1,0 @@
-import"vue";import{registerCustomElement as C}from"./save-button/save-button.esm.js";import"@seamless/store";import"eqpodc-touchpoints-v1";import"eqpodc-library-v1";import"eqpodc-types-v1";import"eqpodc-carl-v1";import"eqpodc-deep-links-v1";import"@owc/aem-translations-util";import"@seamless/one-context";import"@workbench/core";import"eqpodc-flyout-view-store-v1";import"eqpodc-viss-v1";/**
- * @preserve
- * Licenses of bundled dependencies can be found in dependencies-licenses.txt
- */export{C as registerCustomElement};

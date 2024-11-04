@@ -1,0 +1,229 @@
+*{
+  padding: 0 auto;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  display: grid;
+  background-image: url(/IMG/img_design/stars-bg.png);
+  overflow-x: hidden;
+}
+
+.Header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  display: flex;
+}
+li {
+  list-style-type: none;
+}
+
+.Header a {
+  text-decoration: none;
+  display: block;
+  transition: .3s ease;
+}
+
+.Header a:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+.revealUp {
+  opacity: 0;     /* Ẩn ban đầu */
+  transform: translateY(100px);  /* Dịch chuyển phần tử xuống */
+  transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+}
+button:hover{
+ background-image: -webkit-linear-gradient(yellow,rgb(245, 231, 81));
+ border: none;
+}
+#main{
+  height: auto;
+  width: 100%;
+  margin-top: -100px;
+}
+#main .text-light {
+  z-index: 0;
+  position: absolute;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  margin-top: 200px;
+  text-shadow: 3px 3px rgba(41, 29, 29);
+  opacity: 1;
+  animation: anim 7s forwards;
+  
+}
+@keyframes anim {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+#new_1{
+  height: 600px;
+  width:100% ;
+}
+#new_1 .col-4{
+  border: 1px solid white;
+  height: 500px;
+  width: 400px;
+  margin-left: 20px;
+  box-shadow: 1px 1px 20px whitesmoke;
+  border-radius: 10px;
+}
+#new_1 .img-fluid{
+  margin-top: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px inset white;
+  height: 304.3px;
+  width: 400px;
+}
+#new_1 hr{
+  color: yellow;
+  width: 200px;
+  margin: auto;
+  margin-top: 10px;
+}
+#new_1 button{
+  margin-top: 10px;
+}
+.flip-container {
+  perspective: 1000px;
+  width: 100%;
+  height: 100%;
+}
+
+.flipper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+/* Add this class on flip to rotate */
+.flipped .flipper {
+  transform: rotateY(180deg);
+}
+#new_2{
+  height: auto;
+  width: 100%;
+}
+#new_2 .img-fluid{
+  height: 300px;
+  width: 500px;
+}
+#new_2 .row{
+  margin-top:50px ;
+}
+.back .row{
+  width: 100%;
+  height: 80%;
+}
+#new_2 button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#new_2 button{
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px 10px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+}
+#new_2 button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#new_2 button:hover span {
+  padding-right: 25px;
+}
+
+#new_2 button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.Footer {
+  margin-top: 200px;
+    height: auto;
+    width: 100%;
+    background-image: -webkit-linear-gradient(rgb(56, 57, 57), rgb(0, 0, 0));
+    color: white;
+    clear: both;
+    font-size: 12px;
+    
+  }
+.Footer a {
+    color: snow;
+    text-decoration: none;
+    transition: text-decoration-color 300ms;
+    position: relative;
+    padding: 0.2em 0;
+  
+  }
+  
+  .Footer a:hover::after,
+  .Footer a:hover::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+  }
+  
+  .Footer a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: rgb(255, 4, 4);
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .Footer li:nth-child(3) a::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+  }
+  
+  .Footer li:nth-child(3) a:hover::after,
+  .Footer li:nth-child(3) a:focus::after {
+    transform: scale(1);
+  }
+  

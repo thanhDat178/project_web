@@ -1,0 +1,151 @@
+* {
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: grid;
+    background-image: url(/IMG/img_design/stars-bg.png);
+    overflow-x: hidden;
+}
+
+.Header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    display: flex;
+}
+
+#main {
+    height: auto;
+    width: 100%;
+    margin-top: -100px;
+}
+
+#main .text-light {
+    z-index: 0;
+    position: absolute;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    margin-top: 200px;
+    text-shadow: 3px 3px rgba(41, 29, 29);
+    opacity: 1;
+    animation: anim 7s forwards;
+
+}
+@keyframes anim {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+li {
+    list-style-type: none;
+}
+
+.Header a {
+    text-decoration: none;
+    display: block;
+    transition: .3s ease;
+}
+
+.Header a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+h5 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #d42a2a;
+}
+
+.form-label {
+    font-weight: bold;
+    color: white;
+}
+
+button[type="submit"] {
+    background-color: #d42a2a;
+    border: none;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #b92020;
+}
+
+.text-center {
+    margin-bottom: 20px;
+}
+
+#sec_1 .container {
+    max-width: 600px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+.Footer {
+    margin-top: 200px;
+    height: auto;
+    width: 100%;
+    background-image: -webkit-linear-gradient(rgb(56, 57, 57), rgb(0, 0, 0));
+    color: white;
+    clear: both;
+    font-size: 12px;
+
+}
+.Footer a {
+    color: snow;
+    text-decoration: none;
+    transition: text-decoration-color 300ms;
+    position: relative;
+    padding: 0.2em 0;
+
+}
+
+.Footer a:hover::after,
+.Footer a:hover::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+}
+
+.Footer a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: rgb(255, 4, 4);
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+
+.Footer li:nth-child(3) a::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+}
+
+.Footer li:nth-child(3) a:hover::after,
+.Footer li:nth-child(3) a:focus::after {
+    transform: scale(1);
+}
